@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Rosa's</title>
+    <link rel="shortcut icon" href="../images/iconerosa.svg">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div id="pagina">
+        <!--CABEÇALHO DO SITE-->
+        <header>
+          <img id="logo1" src="../images/rosa's banner.jpg" alt="Banner Rosa's">
+          <h1>Lojinha Rosa's</h1>    
+        </header>
+        <nav>
+          <a href="index.html" class="linkNav">Home</a>
+          <a href="#" class="linkNav">Produtos</a>
+          <a href="#" class="linkNav">Catálogo</a>
+          <a href="#" class="linkNav">Carrinho</a>
+          <a href="#" class="linkNav">Promoções</a>
+          <a href="#" class="linkNav">Login</a> 
+          <img id="logo3" src="image/login.jpg" alt="Login">
+          <a href="./login.html" class="linkNav" id="link2">Login</a>    
+        </nav>
+        <main>
+          <div id="formulario">
+              <h3>CADASTRO</h3>
+              <form id="formulario" action="cadastro.php" method="post">
+                  <fieldset>
+                       <!--nome-->
+                      <label for="nome">Nome Completo</label>
+                      <input type="text" id="nome" required placeholder="Digite seu nome"><br>
+                      <!--cpf-->
+                      <label for="cpf">CPF</label>
+                      <input type="text" id="cpf" required placeholder="Digite seu CPF"><br>
+                       <!--data de nascimento-->
+                      <label for="data">Data de Nascimento:</label>
+                      <input type="date" id="data"><br>
+                       <!--email-->
+                      <label for="email">E-mail:</label><br>
+                      <input type="email" id="email" required placeholder="Digite seu e-mail"><br>
+                       <!--endereco-->
+                      <label for="endereco">Endereço:</label><br>
+                      <input type="text" id="endereco" required placeholder="Digite seu endereço"><br>
+                       <!--cep-->
+                      <label for="cep">CEP</label>
+                      <input type="text" id="cep" required placeholder="Digite seu CEP"><br>
+                       <!--celular-->
+                      <label for="celular">WhatsApp/Celular</label><br>
+                      <input type="text" id="celular" required placeholder="Celular"><br>
+                       <!--senha-->
+                      <label for="senhaDoUsuario">Digite a sua senha:</label>
+                      <input required type="password" id="senha"><br>
+                
+                <button id="botaoEnviar" type="submit">Cadastrar</button>
+                <button id="botaoEnviar" type="submit">
+                  <a id="entrar" href="login.html">Voltar</a>
+                </button>
+                </fieldset>
+            </div>
+        </main>
+       
+    
+       <footer>
+        <div id="divFooter">
+          <img id="imgPagamento" src="./image/siteSeguro.png" alt="">
+        </div>
+        <div id="divFooter">
+          <img id="imgRedesSociais" src="./image/redesSociais.png" alt="">
+        </div>
+        <p>TESTE TESTE TESTE TESTE TESTE</p>
+      </footer>
+    </body>
+    </html>

@@ -1,0 +1,99 @@
+*{
+    padding:0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* SECTION SOBRE CARTÕES */
+#cartoes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*height: 300px;
+    background-color: rgb(117, 1, 1);*/
+}
+
+#cartoes h3{
+    text-align: center;
+    /*background-color: blueviolet;*/
+}
+
+#cartoesGrupo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    /*background-color: beige;*/
+}
+.cartao{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: aquamarine;*/
+}
+#catalogo1{
+    background-image: url(../images/kitkat.jpg);
+}
+#catalogo2{
+    background-image: url(../images/nutella.jpg);
+}
+#catalogo3{
+    background-image: url(../images/cocacola.jpg);
+}
+/* FIM SECTION CARTÕES */
+
+/* SECTION DE HORÁRIOS */
+#horariosDiv{
+    width: 1000px;
+    border: 1px solid black;
+    box-shadow: 5px 5px gray;
+    border-radius: 10 px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    margin: 30px auto;
+
+}
+#horariosDiv table{
+    width: 800px;
+    border-collapse: collapse;
+    /*background-color: aqua;*/
+}
+
+td, th{
+    border: solid black 1px;
+    padding: 8px;
+}
+
+th{
+    background-color: #ba2d2d;
+    color: white;
+}
+
+td:hover{
+    background-color: aliceblue;
+}
+
+th:empty{
+    background-color: transparent;
+    border: none;
+}
+/* FIM SECTION DE HORÁRIOS */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 60px;
+    background-color: #ba2d2d;
+    color: white; 
+}
