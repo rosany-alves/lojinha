@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - NOSSO PONTO ROSA'S</title>
+        <link rel="shortcut icon" href="../images/iconerosa.svg">
+        <link rel="stylesheet" href="../styles/geral.css">
+        <link rel="stylesheet" href="../styles/login.css">
+    </head>
+<body>
+    <div id="page">
+        <main>
+            <div id="efeito">
+                <div id="banner">  
+                </div>
+            </div>
+
+            <div id="formulario">
+                <h3 class="animate_animated animate__fadeOutDown"> NOSSO PONTO ROSA'S</h3>
+                <form>
+                    <h3 class="animate_animated animate__fadeOutDown">LOGIN</h3>
+                    <!--email-->
+                    <label for="email">Digite seu e-mail:</label>
+                    <input type="text" placeholder="Email" id="email">
+                    
+                    <!--senha-->
+                    <label for="senha">Digite a sua senha:</label>
+                    <input type="password" placeholder="Senha" id="senha">
+                 
+                    <button type="button" onclick="logar(); return false"> ENTRAR</button>
+
+                    <button type="reset">CANCELAR</button>
+                    <a href="../pages/recuperarSenha.html"> Esqueci a senha? Faça a recuperação!</a>
+                    <a href="../pages/cadastro.html"> Não tenho uma conta? Faça o Cadastro!</a>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function logar(){
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            if(email == "admin" && senha == "admin"){
+                alert('Seja bem vindo(a)!');
+                location.href = "../../index.html";
+            }else{
+                alert('Email ou senha incorretos!');
+            }
+
+        }
+    </script>
+</body>
+</html>

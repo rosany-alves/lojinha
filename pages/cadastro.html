@@ -4,74 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Rosa's</title>
+    <title>Cadastro - Nosso Ponto Rosa's</title>
     <link rel="shortcut icon" href="../images/iconerosa.svg">
+    <!--personal links-->
+    <link rel="stylesheet" href="../styles/geral.css">
     <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
-    <div id="pagina">
-        <!--CABEÇALHO DO SITE-->
-        <header>
-          <img id="logo1" src="../images/rosa's banner.jpg" alt="Banner Rosa's">
-          <h1>Lojinha Rosa's</h1>    
-        </header>
-        <nav>
-          <a href="index.html" class="linkNav">Home</a>
-          <a href="#" class="linkNav">Produtos</a>
-          <a href="#" class="linkNav">Catálogo</a>
-          <a href="#" class="linkNav">Carrinho</a>
-          <a href="#" class="linkNav">Promoções</a>
-          <a href="#" class="linkNav">Login</a> 
-          <img id="logo3" src="image/login.jpg" alt="Login">
-          <a href="./login.html" class="linkNav" id="link2">Login</a>    
-        </nav>
-        <main>
-          <div id="formulario">
-              <h3>CADASTRO</h3>
-              <form id="formulario" action="cadastro.php" method="post">
-                  <fieldset>
+        <div id="cabecalho">
+            <h3>NOSSO PONTO ROSA'S</h3>
+            </div>
+            
+            <conteudo>
+              <main>
+                <div id="formulario">
+                  <h3>CADASTRO</h3>
+                  <form id="formulario" action="login.html" method="post">
+                    
+                    
                        <!--nome-->
-                      <label for="nome">Nome Completo</label>
-                      <input type="text" id="nome" required placeholder="Digite seu nome"><br>
+                      <label for="nome">Nome Completo:</label>
+                      <input type="text" id="nome" required placeholder="Digite seu nome">
                       <!--cpf-->
                       <label for="cpf">CPF</label>
-                      <input type="text" id="cpf" required placeholder="Digite seu CPF"><br>
+                      <input type="text" id="cpf" required placeholder="Digite seu CPF">
                        <!--data de nascimento-->
                       <label for="data">Data de Nascimento:</label>
-                      <input type="date" id="data"><br>
+                      <input type="date" id="data">
                        <!--email-->
-                      <label for="email">E-mail:</label><br>
-                      <input type="email" id="email" required placeholder="Digite seu e-mail"><br>
+                      <label for="email">E-mail:</label>
+                      <input type="email" id="email" required placeholder="Digite seu e-mail">
                        <!--endereco-->
-                      <label for="endereco">Endereço:</label><br>
-                      <input type="text" id="endereco" required placeholder="Digite seu endereço"><br>
+                      <label for="endereco">Endereço:</label>
+                      <input type="text" id="endereco" required placeholder="Digite seu endereço">
                        <!--cep-->
                       <label for="cep">CEP</label>
-                      <input type="text" id="cep" required placeholder="Digite seu CEP"><br>
+                      <input type="text" id="cep" required placeholder="Digite seu CEP">
                        <!--celular-->
-                      <label for="celular">WhatsApp/Celular</label><br>
-                      <input type="text" id="celular" required placeholder="Celular"><br>
+                      <label for="celular">WhatsApp/Celular</label>
+                      <input type="text" id="celular" required placeholder="Celular">
                        <!--senha-->
                       <label for="senhaDoUsuario">Digite a sua senha:</label>
-                      <input required type="password" id="senha"><br>
-                
-                <button id="botaoEnviar" type="submit">Cadastrar</button>
-                <button id="botaoEnviar" type="submit">
-                  <a id="entrar" href="login.html">Voltar</a>
-                </button>
-                </fieldset>
-            </div>
-        </main>
-       
+                      <input required type="password" id="senha">
+
+                      <a href="../pages/login.html">
+                        <button type="button">CADASTRAR</button>
+                    </a>
+                      <button type="reset">CANCELAR</button>
+                    </form>
+                  </div>
+                </main>
+            </conteudo>
+    <footer>
+        <h3>
+            Todos os direitos reservados em ROSA'S.
+        </h3>
+    </footer>   
     
-       <footer>
-        <div id="divFooter">
-          <img id="imgPagamento" src="./image/siteSeguro.png" alt="">
-        </div>
-        <div id="divFooter">
-          <img id="imgRedesSociais" src="./image/redesSociais.png" alt="">
-        </div>
-        <p>TESTE TESTE TESTE TESTE TESTE</p>
-      </footer>
-    </body>
-    </html>
+</body>
+</html>

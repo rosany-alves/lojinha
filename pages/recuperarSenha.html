@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--bibliotecas https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--personal links-->
+    <link rel="stylesheet" href="../styles/geral.css">
+    <link rel="stylesheet" href="../styles/RecuperarSenha.css">
+</head>
+<body>
+    <div id="page">
+        <main>
+            <!--https://cssgradient.io/ e imagens: https://unsplash.com/pt-br-->
+            <div id="efeito">
+                <div id="banner"> 
+                </div>
+            </div>
+            
+            <div id="formulario">
+                <h3 class="animate_animated animate__fadeOutDown">RECUPERAÇÃO DE SENHA</h3>
+                <form action="../pages/login.html" method="post">
+                    <!--email-->
+                    <label for="emailDoUsuario">Digite seu e-mail:</label>
+                    <input required type="email" id="emailDoUsuario">
+                    <a href="login.html">
+                        <button type="button">RECUPERAR</button>
+                    </a>
+                    <button type="reset">CANCELAR</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
