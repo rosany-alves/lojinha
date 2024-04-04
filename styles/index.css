@@ -94,7 +94,6 @@
   #efeito{ /*Efeito para definir transparência na imagem*/
     width: 95%;
     height: 400px;
-    background-color: red;
     margin: 10px auto;
     border-radius: 20px;
   }
