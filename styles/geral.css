@@ -1,6 +1,10 @@
 @font-face {
     font-family: WildTrails;
-    src: url(../fonts/wild_trails/Wild\ Trails.ttf);
+    src: url(../fonts/Wild\ Trails.ttf);
+}
+@font-face {
+    font-family: RedditMono;
+    src: url(../fonts/Oswald-VariableFont_wght.ttf);
 }
 
 @keyframes mudaCor {
@@ -8,13 +12,13 @@
         color: var(--preto);
     }
     25%{
-        color: rgb(0, 88, 14);
+        color: rgb(146, 148, 51);
     }
     50%{
         color: var(--corPrimaria);
     }
     75%{
-        color: rgb(0, 88, 14);
+        color: rgb(210, 180, 140);
     }
     100%{
         color: var(--preto);
@@ -22,12 +26,12 @@
 }
 
 :root{
-    --corPrimaria : rgb(0, 143, 21) ;
+    --corPrimaria : rgb(143, 93, 0) ;
     --corSecundaria : rgb(35, 35, 35) ;
     --branco : rgb(255, 255, 255);
     --preto : rgb(18, 18, 18);
     --fontePrimaria : WildTrails;
-    --fonteSecundaria : 'Trebuchet MS' ;
+    --fonteSecundaria : RedditMono;
 }
 
 *{
@@ -112,3 +116,9 @@ button{
     display: flex;
     overflow: hidden;  
 }
+
+button:hover{ 
+    transform: scale(1.1);
+    transition: all 0.5s;
+    /* Comando para aumentar os botões de tamanho quando passar o mouse*/  
+  }
